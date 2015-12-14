@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Alisayed</title>
+</head>
+
+<body>
+
+<div class="container clearfix">
+<!--One!-->
+ <div class="one-left">
+ </div>
+ <div class="one-right">
+    <div class="toggle"> 
+        <img src="img/toggle.png" alt="toggle" width="33" height="29"> 
+    </div>
+    <nav class="main-navigation">
+     <ul>
+      <li><a href="#">Main</a></li>
+      <li><a href="#">Web Design</a></li>
+      <li><a href="#">My Works</a></li>
+      <li><a href="#">About Me</a></li>
+     </ul>
+    </nav>
+    <div class="one-content">
+        <h1>Ali Sayed's<br> 
+        <b>Web designing</b><br>
+        Project</h1>
+        <p>Lorem ipsum dolor sit amet,
+        consectetuer adipiscing elet, set diam
+        nonummy nibh euismod tincidunt ut
+        laoreet dolore.</p> 
+        <p>uis nostrud exerci tation ullamcorper
+        suscipit lobortis nisl ut aliquip ex ea 
+        commodo consequat. Duis autem vel
+        eum iriure dol.</p>
+    </div>
+ </div>
+
+<!--Two!-->
+ <div class="two-left">
+    <h2>Drawing <span>Sketch</span></h2>
+    <p>Lorem ipsum dolor sit amet,
+        consectetuer adipiscing elet, set diam
+        nonummy nibh euismod tincidunt ut
+        laoreet dolore.</p>
+    <h2>Making <span>Design</span></h2>
+    <p>Lorem ipsum dolor sit amet,
+        consectetuer adipiscing elet, set diam
+        nonummy nibh euismod tincidunt ut
+        laoreet dolore.</p>
+    <h2>Developing <span>Product</span></h2>
+    <p>Lorem ipsum dolor sit amet,
+        consectetuer adipiscing elet, set diam
+        nonummy nibh euismod tincidunt ut
+        laoreet dolore.</p>
+ </div>
+ <div class="two-right-up">
+    <h2>Best <span>Starting</span></h2>
+    <p>Lorem ipsum dolor sit amet,
+        consectetuer adipiscing elet, set diam
+        nonummy nibh euismod tincidunt ut
+        laoreet dolore.</p>
+    <a href="#" class="button">View Our History</a>
+ </div>
+ <div class="two-right-down">
+    <h2>Verified <span>Dummy</span></h2>
+    <p>Lorem ipsum dolor sit amet,
+        consectetuer adipiscing elet, set diam
+        nonummy nibh euismod tincidunt ut
+        laoreet dolore.</p>
+    <a href="#" class="button button-white">Go To The Page</a>
+ </div>
+
+<!--Three!-->
+ <div class="three-left">
+    <h2>This Webpage is</h2>
+    <h2><span>Designed By</span></h2>
+    <div class="logo-wrapp">
+    <img src="img/logo.jpg" class="logo" alt="logo" width="90" height="90">
+    </div>
+    <h2>Ali Sayed</h2>
+    <p>Graphic Designer</p>
+ </div>
+        
+ <div class="three-right">
+    <h2 class="form-title">Say <b>'Hello'</b></h2> 
+    <form action="#">
+  <input class="text" type="text" id="check1" placeholder="Your Name">
+   <input class="text" type="text" id="check2" placeholder="Your Email">
+   <textarea class="text text-message" name="text" id="check3" placeholder="Your Message Here..."></textarea>
+    </form>
+    <p>Stay Connected Whith Us...</p>
+        <a class="social social-1" href=""></a>
+        <a class="social social-2" href=""></a>
+        <a class="social social-3" href=""></a>
+ <p>Please Feel Free To Contact With me For Any Kind of Project.</p>
+</div>
+</div>
+
+
+<script>
+    var shape=document.querySelector(".toggle");
+    var navigation=document.querySelector(".main-navigation");
+    shape.addEventListener("click",function(event){
+        event.preventDefault();
+        navigation.classList.toggle("main-navigation-show");});
+
+    window.addEventListener("keydown",function(event){
+        if (event.keyCode == 27){
+             if (navigation.classList.contains("main-navigation-show")){
+               navigation.classList.remove("main-navigation-show"); 
+             } 
+        }
+        });  
+</script>
+
+</body>
+
+</html>
